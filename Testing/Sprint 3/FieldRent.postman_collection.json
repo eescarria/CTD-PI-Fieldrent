@@ -1,0 +1,252 @@
+{
+	"info": {
+		"_postman_id": "20899d55-0fd3-4052-844e-5e9b7cdc7821",
+		"name": "FieldRent",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "24588146"
+	},
+	"item": [
+		{
+			"name": "Sign-up",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"estefy0114@gmail.com\",\r\n    \"password\":\"12345678\",\r\n    \"nombre\":\"Estefa\",\r\n    \"apellido\":\"Garcia\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/sign-up"
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"lorenzoga@gmail.com\",\r\n    \"password\":\"nosse1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://3.19.232.248:8080/login"
+			},
+			"response": []
+		},
+		{
+			"name": "Add barrio",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "http://localhost:8080/god/addbarrios"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete barrio",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8080/god/deletebarrio/11"
+			},
+			"response": []
+		},
+		{
+			"name": "Listar todos los barrios",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost:8080/listallbarrios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"listallbarrios"
+					],
+					"query": [
+						{
+							"key": "Authorization",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar todas las canchas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/listallcanchas"
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar cancha por id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/detailcancha/6"
+			},
+			"response": []
+		},
+		{
+			"name": "Listar canchas por deporte",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":1,\r\n    \"nombre\":\"Futbol\",\r\n    \"url\":null,\r\n    \"descripcion\":\"cancha de futbol 7\",\r\n    \"canchaList\":[]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/listxsportcanchas"
+			},
+			"response": []
+		},
+		{
+			"name": "Add cancha",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsb3JlbnpvZ2FAZ21haWwuY29tIiwiaWF0IjoxNjg2ODU4MzQxLCJleHAiOjE2ODY4NzAzNDF9._DagHHY2D15spBH17VMOlT0n9seDKSMdik3HUP18--0"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "canchaDTO",
+							"value": "{\n  \"categoria\": {\n    \"nombre\": \"Basquet\"\n  },\n  \"domicilio\": {\n    \"calle\": \"Iberar\",\n    \"numero\": \"7000\",\n    \"barrio\": {\n            \"nombre\":\"Balvanera\"\n    },\n    \"provincia\": \"Buenos Aires, Capital\"\n  },\n  \"precio\": 11.000,\n  \"telefono\": \"1134567756\",\n  \"nombre\": \"Balvanera Basket\",\n  \"criteriosList\": [\n    {\n      \"descripcion\": \"Entrar con calzado apto para el juego unicamente.\",\n      \"criterioTitulo\": \"REGLAS_DE_LA_CANCHA\"\n    }\n  ] \n}",
+							"type": "text"
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/Usuario/Downloads/basket5.jpg"
+						},
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsb3JlbnpvZ2FAZ21haWwuY29tIiwiaWF0IjoxNjg2ODU4MzQxLCJleHAiOjE2ODY4NzAzNDF9._DagHHY2D15spBH17VMOlT0n9seDKSMdik3HUP18--0",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://3.19.232.248:8080/admin/addcancha"
+			},
+			"response": []
+		},
+		{
+			"name": "Listar canchas por owner",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/admin/listxownercanchas"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete cancha",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8080/admin/deletecancha/{id}"
+			},
+			"response": []
+		},
+		{
+			"name": "Update cancha",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": "http://localhost:8080/admin/updatecancha"
+			},
+			"response": []
+		},
+		{
+			"name": "Listar categorías",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/findAllCategoria/"
+			},
+			"response": []
+		},
+		{
+			"name": "Add categoría",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "http://localhost:8080/god/addcategoria"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete categoría",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8080/god/deleteCategoria/{id}"
+			},
+			"response": []
+		},
+		{
+			"name": "Listar usuarios",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/admin/getusers"
+			},
+			"response": []
+		},
+		{
+			"name": "Listar clientes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/user/getclient"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete cliente",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8080/god/deleteClient"
+			},
+			"response": []
+		}
+	]
+}

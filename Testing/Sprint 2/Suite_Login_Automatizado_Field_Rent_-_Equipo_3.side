@@ -1,0 +1,273 @@
+{
+  "id": "bced1dc0-81b5-4dbb-842e-5ca6f01b3e89",
+  "version": "2.0",
+  "name": "Login Field Rent - Equipo 3",
+  "url": "http://localhost:5173",
+  "tests": [{
+    "id": "186427a8-169a-4f6e-97f3-bb4089d925f5",
+    "name": "TC032 P - Login",
+    "commands": [{
+      "id": "ec4c34c6-ec84-4a34-8fac-262b2b96848f",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "87a8b4f0-de54-4dd1-85d1-c0bbc6efec5a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x880",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dae85628-0900-425e-bc38-083a4a7f57b0",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(1) > button",
+      "targets": [
+        ["css=a:nth-child(1) > button", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[2]/a/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Iniciar Sesión')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6352cbee-d2d2-4273-9ee8-c3ae5588f4a2",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ca7681a1-2472-4174-b9d1-00b475633ea0",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "juandavid@gmail.com"
+    }, {
+      "id": "a0b29888-9266-4527-839a-49306420e008",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a01acd74-d0dc-40b5-8b1b-23bdd704ac4f",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "123123123"
+    }, {
+      "id": "c624d15b-9ab3-4df3-863c-341f71188b12",
+      "comment": "",
+      "command": "click",
+      "target": "css=.formSignUp",
+      "targets": [
+        ["css=.formSignUp", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/form", "xpath:idRelative"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "62287aec-dd07-49fa-b667-55d5036feebd",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(3)",
+      "targets": [
+        ["css=button:nth-child(3)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Iniciar sesión')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "5f4fb086-726f-4509-b6d0-1946eb726a5e",
+    "name": "TC033 N - Login",
+    "commands": [{
+      "id": "c20b020f-9242-4d33-9918-0b0bd19763a3",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d231edba-f155-43f3-ac80-ac3cb5e06ab6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x880",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e41a459c-9da2-463d-a757-7290abad739b",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(1) > button",
+      "targets": [
+        ["css=a:nth-child(1) > button", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[2]/a/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Iniciar Sesión')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "14815b3a-b71c-4cdb-87d4-45a188ea64ed",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f8bdbb14-4104-44a4-a6e8-195965512362",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "nada@gmail.com"
+    }, {
+      "id": "1a282334-b47e-4cfd-aed4-a46af16db844",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "06a071ec-89d1-4112-865c-210781b614e5",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "88888888"
+    }, {
+      "id": "30a604c8-0f3f-469c-92dc-43039e363870",
+      "comment": "",
+      "command": "click",
+      "target": "css=.formSignUp",
+      "targets": [
+        ["css=.formSignUp", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/form", "xpath:idRelative"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "574f04f5-c615-4d94-a018-8964c59535b3",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(3)",
+      "targets": [
+        ["css=button:nth-child(3)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Iniciar sesión')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "11a6c970-2b52-4afc-9622-8ac56582c4ff",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=p:nth-child(4)",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "fe9fa473-c9e9-47c8-8d5b-fd2514e80f06",
+    "name": "TC035 - Cierre de sesión",
+    "commands": [{
+      "id": "77ed17d3-315e-4615-adfb-a8e159a7b5ed",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c8e283cf-abe6-4f60-8f2b-b2a72dac918d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x864",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f061b1a4-a273-4335-bb80-a252dca019be",
+      "comment": "Click Botón de Cerrar Sesión",
+      "command": "click",
+      "target": "css=.divButtons > button",
+      "targets": [
+        ["css=.divButtons > button", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cerrar Sesion')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "efa6d3ad-1500-4dd7-bafe-3ee2356df8ea",
+      "comment": "Assert element present de botón para iniciar sesión",
+      "command": "assertElementPresent",
+      "target": "css=a:nth-child(1) > button",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "cdea6034-be28-49db-a361-5b4f27a4c19c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["186427a8-169a-4f6e-97f3-bb4089d925f5"]
+  }],
+  "urls": ["http://localhost:5173/"],
+  "plugins": []
+}
